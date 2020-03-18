@@ -11,3 +11,7 @@ build:
 
 test_script:
 - bin\Debug\LocaleNetFxTest.exe
+
+- rd /r /s Properties
+- del LocaleNetFxTest.csproj
+- dotnet run LocaleNetFxTestCore.csproj
