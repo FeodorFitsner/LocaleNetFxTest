@@ -1,4 +1,10 @@
-image: Visual Studio 2019
+image:
+- Visual Studio 2015
+- Visual Studio 2017
+- Visual Studio 2019
+
+init:
+- ps: (Get-ItemProperty HKLM:\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full).Release
 
 build:
   project: LocaleNetFxTest.sln
