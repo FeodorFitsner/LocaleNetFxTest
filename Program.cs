@@ -12,12 +12,11 @@ namespace LocaleNetFxTest
         static void Main(string[] args)
         {
 			Dictionary<string, string> localeAndExpectedFormattedNumbers = new Dictionary<string, string>()
-		{
-			{ "bg-BG", "12,35" },
-			{ "de-CH", "12.35" },
-			{ "fr-CH", "12,35" }
-
-		};
+			{
+				{ "bg-BG", "12,35" },
+				{ "de-CH", "12.35" },
+				{ "fr-CH", "12,35" }
+			};
 
 			foreach (string locale in localeAndExpectedFormattedNumbers.Keys)
 			{
