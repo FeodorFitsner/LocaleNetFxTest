@@ -1,2 +1,5 @@
+build:
+  project: LocaleNetFxTest.sln
+
 test_script:
 - bin\Debug\LocaleNetFxTest.exe
